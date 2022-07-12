@@ -1,26 +1,36 @@
 {
   "name": "react-multi-dropdown-menu",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "react multi select option",
+  "module": "index.tsx",
   "main": "index.tsx",
-  "author": "Woobyunghyun",
-  "license": "MIT",
+  "peerDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/preset-react": "^7.10.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "scripts": {
-    "dev": "webpack-dev-server --progress --mode development",
-    "build": "webpack --progress --mode production",
-    "prepublish": "yarn build"
+    "publish:npm": "rm -rf dist && mkdir dist && babel src -d dist --copy-files"
   },
-  "peerdependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "typescript": "^4.7.4"
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   },
-  "dependencies": {
-    "react-scripts": "^5.0.1"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "devDependencies": {
-    "@babel/cli": "^7.18.6",
-    "@babel/preset-react": "^7.18.6",
-    "webpack-cli": "^4.10.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
