@@ -1,14 +1,42 @@
 import './styles/global.css';
 
-import Navbar from './multiDropdown/components';
-
 const App = () => {
+  const data = [
+    {
+      title: 'Services',
+      submenu: [
+        {
+          title: 'web design',
+        },
+        {
+          title: 'web development',
+          submenu: [
+            {
+              title: 'Frontend',
+            },
+            {
+              title: 'Backend',
+              submenu: [
+                {
+                  title: 'NodeJS',
+                },
+                {
+                  title: 'PHP',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          title: 'SEO',
+        },
+      ],
+    },
+  ];
   return (
-    <header>
-      <div className='nav-area bg-[#aaa]'>
-        <Navbar />
-      </div>
-    </header>
+    <div className='nav-area bg-[#aaa]'>
+      <p>qwf</p>
+    </div>
   );
 };
 

@@ -1,0 +1,26 @@
+{
+  "name": "react-multi-dropdown-menu",
+  "version": "1.0.1",
+  "description": "react multi select option",
+  "main": "index.tsx",
+  "author": "Woobyunghyun",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --mode development",
+    "build": "webpack --progress --mode production",
+    "prepublish": "yarn build"
+  },
+  "peerdependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/preset-react": "^7.18.6",
+    "webpack-cli": "^4.10.0"
+  }
+}
