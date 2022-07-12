@@ -4,13 +4,24 @@
   "description": "react-view-components",
   "module": "dist/index.js",
   "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "react-multi-dropdown",
+    "react-dropdown",
+    "multi-select-option",
+    "react-ui"
+  ],
+  "author": "Woo ByungHyun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byunghyun/bui-core/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/byunghyun/bui-core/tree/main/src"
   },
   "homepage": "http://craham.pe.kr",
   "email": "eer3481@gmail.com",
-  "license": "MIT",
   "scripts": {
     "start": "react-scripts start",
     "publish:npm": "rm -rf dist && tsc",
