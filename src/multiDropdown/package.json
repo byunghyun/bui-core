@@ -1,6 +1,6 @@
 {
   "name": "react-multi-dropdown-menu",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "react multi select option",
   "module": "index.tsx",
   "main": "index.tsx",
