@@ -1,25 +1,29 @@
 {
-  "name": "react-multi-dropdown-menu",
-  "version": "1.1.2",
-  "description": "react multi select option",
-  "module": "index.tsx",
-  "main": "index.tsx",
+  "name": "bui-core",
+  "version": "0.0.2",
+  "description": "react-view-components",
+  "module": "dist/index.js",
+  "main": "dist/index.js",
   "peerDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/preset-react": "^7.10.4",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "typescript": "^4.7.4",
+    "react-scripts": "^5.0.1"
   },
-
   "repository": {
     "type": "git",
     "url": "https://https://github.com/byunghyun/react-multi-dropdown-menu/tree/main/src/multiDropdown"
   },
   "homepage": "http://craham.pe.kr",
-  "email" : "eer3481@gmail.com",
-  "license" : "MIT",
+  "email": "eer3481@gmail.com",
+  "license": "MIT",
   "scripts": {
-    "publish:npm": "rm -rf dist && mkdir dist && babel src -d dist --copy-files"
+    "publish:npm": "rm -rf dist && tsc",
+    "prepare": "react-scripts build"
   },
   "babel": {
     "presets": [
