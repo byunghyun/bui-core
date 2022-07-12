@@ -1,5 +1,7 @@
 import './styles/global.css';
 
+import { DropDownMenu } from 'bui-core';
+
 const App = () => {
   const data = [
     {
